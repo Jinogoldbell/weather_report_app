@@ -4,7 +4,7 @@ import "./Weather.css";
 
 // Get a free API key at https://openweathermap.org/api and put it in a
 // .env file at the project root as REACT_APP_WEATHER_API_KEY=yourKeyHere
-const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+const API_KEY = "e7df2ed28b3760a2ba55495549114bae";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 function Weather() {
