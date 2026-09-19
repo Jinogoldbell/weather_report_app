@@ -1,0 +1,86 @@
+:root {
+  --navy-950: #0b1d2e;
+  --navy-900: #10283f;
+  --navy-800: #17395a;
+  --sky-500: #4fa8d8;
+  --sky-300: #a9d8f0;
+  --amber-400: #f2a541;
+  --amber-500: #e08e2b;
+  --fog-100: #eef4f8;
+  --ink-700: #274357;
+  --danger-500: #d64545;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+}
+
+.app-shell {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+      circle at 15% -10%,
+      var(--navy-800) 0%,
+      transparent 55%
+    ),
+    linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 100%);
+  color: var(--fog-100);
+  padding: 0 1.25rem;
+}
+
+.app-header {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3.5rem 0 2rem;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--amber-400);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.app-header h1 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+}
+
+.subhead {
+  color: var(--sky-300);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1.5rem 0 2rem;
+  color: var(--sky-300);
+  font-size: 0.85rem;
+}
+
+.app-footer a {
+  color: var(--amber-400);
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 2.5rem 0 1.5rem;
+  }
+}
